@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header-section">
+      <div>
+        <!-- nav -->
+        <nav class="nav">
+          <li>Home</li>
+          <li>Weather</li>
+          <li>Contact</li>
+        </nav>
+      </div>
+      <!-- icon dark mode -->
+      <button id="btn-dark-mode">
+        <svg
+          width="40px"
+          height="40px"
+          viewBox="-5.52 -5.52 35.04 35.04"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M13 6V3M18.5 12V7M14.5 4.5H11.5M21 9.5H16M15.5548 16.8151C16.7829 16.8151 17.9493 16.5506 19 16.0754C17.6867 18.9794 14.7642 21 11.3698 21C6.74731 21 3 17.2527 3 12.6302C3 9.23576 5.02061 6.31331 7.92462 5C7.44944 6.05072 7.18492 7.21708 7.18492 8.44523C7.18492 13.0678 10.9322 16.8151 15.5548 16.8151Z"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </button>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- hero section -->
+      <section class="hero-section">
+        <div class="hero-section-text">
+          <h1>Precision in every forecast. Stay ahead of the elements</h1>
+
+          <button id="learn-more">learn more</button>
+        </div>
+
+        <div class="hero-section-img">
+          <img src="image/img-hero-section.png" alt="img-hero-section" />
+        </div>
+      </section>
+    </main>
+
+    <section class="All-box-weather">
+      <!-- weather section 1 -->
+      <section class="weather-section">
+        <!-- weather tehran -->
+        <div class="weather-box">
+          <h2>Tehran</h2>
+          <div class="info-weather">
+            <p>Temperature</p>
+            <span id="temp-tehran"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind</p>
+            <span id="wind-tehran"></span>
+          </div>
+          <div class="info-weather">
+            <p>Rain</p>
+            <span id="rain-tehran"></span>
+          </div>
+          <div class="more-info">
+            <!-- data set in html -->
+            <button data-city="tehran">more ></button>
+          </div>
+        </div>
+
+        <!-- weather section more -->
+        <div class="weather-box-more" id="details-tehran">
+          <h2>More Details</h2>
+          <div class="info-weather">
+            <p>Wind Speed</p>
+            <span id="wind-speed-tehran"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind Direction</p>
+            <span id="wind-direction-tehran"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind Gusts</p>
+            <span id="wind-gusts-tehran"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- weather section 2-->
+      <section class="weather-section">
+        <!-- weather lahijan -->
+        <div class="weather-box">
+          <h2>Lahijan</h2>
+          <div class="info-weather">
+            <p>Temperature</p>
+            <span id="temp-lahijan"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind</p>
+            <span id="wind-lahijan"></span>
+          </div>
+          <div class="info-weather">
+            <p>Rain</p>
+            <span id="rain-lahijan"></span>
+          </div>
+          <div class="more-info">
+            <button data-city="lahijan">more ></button>
+          </div>
+        </div>
+
+        <!-- weather section more -->
+        <div class="weather-box-more" id="details-lahijan">
+          <h2>More Details</h2>
+          <div class="info-weather">
+            <p>Wind Speed</p>
+            <span id="wind-speed-lahijan"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind Direction</p>
+            <span id="wind-direction-lahijan"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind Gusts</p>
+            <span id="wind-gusts-lahijan"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- weather section 3-->
+      <section class="weather-section">
+        <!-- weather kish -->
+        <div class="weather-box">
+          <h2>Kish</h2>
+          <div class="info-weather">
+            <p>Temperature</p>
+            <span id="temp-kish"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind</p>
+            <span id="wind-kish"></span>
+          </div>
+          <div class="info-weather">
+            <p>Rain</p>
+            <span id="rain-kish"></span>
+          </div>
+          <div class="more-info">
+            <button data-city="kish">more ></button>
+          </div>
+        </div>
+
+        <!-- weather section more -->
+        <div class="weather-box-more" id="details-kish">
+          <h2>More Details</h2>
+          <div class="info-weather">
+            <p>Wind Speed</p>
+            <span id="wind-speed-kish"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind Direction</p>
+            <span id="wind-direction-kish"></span>
+          </div>
+          <div class="info-weather">
+            <p>Wind Gusts</p>
+            <span id="wind-gusts-kish"></span>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-section">
+        <p>API source -> open-meteo.com</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="script.js"></script>
+</html>
